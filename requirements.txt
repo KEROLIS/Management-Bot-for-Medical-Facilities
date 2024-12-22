@@ -1,0 +1,7 @@
+fastapi==0.115.6
+pydantic==2.10.4
+pymongo==4.10.1
+pytest==7.4.0
+transformers==4.39.2
+unsloth==2024.12.8
+uvicorn==0.34.0

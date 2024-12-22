@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "c1bb195b-cf6b-43ab-88c6-9f9658016ebb",
+		"name": "management bot system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12548096"
+	},
+	"item": [
+		{
+			"name": "generate_conversation_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/generate_conversation_id",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"generate_conversation_id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "conversation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"conversation_id\": \"6a1ed6b2-ec9e-4768-93cb-103418cf895f\", \n    \"user_input\": \"Schedule a follow-up for John Doe on December 20th.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/conversation",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"conversation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
